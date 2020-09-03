@@ -1,0 +1,10 @@
+function palindrome(str) {
+  //lowercase for caching different cases
+  var string = str.toLowerCase().split(/[^A-Za-z0-9]/i).join('');
+  var splitted = string.split('');
+  if (splitted.join('') === splitted.reverse().join('')){
+    return true;
+  }
+
+  return false;
+}
